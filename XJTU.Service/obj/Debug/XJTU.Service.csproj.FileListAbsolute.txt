@@ -1,0 +1,11 @@
+F:\gps\XJTUWeb\XJTU\XJTU.Service\bin\Debug\XJTU.Service.dll
+F:\gps\XJTUWeb\XJTU\XJTU.Service\bin\Debug\XJTU.Service.pdb
+F:\gps\XJTUWeb\XJTU\XJTU.Service\obj\Debug\XJTU.Service.dll
+F:\gps\XJTUWeb\XJTU\XJTU.Service\obj\Debug\XJTU.Service.pdb
+F:\gps\XJTUWeb\XJTU\XJTU.Service\bin\Debug\XJTU.DataAccess.Contract.dll
+F:\gps\XJTUWeb\XJTU\XJTU.Service\bin\Debug\XJTU.Model.dll
+F:\gps\XJTUWeb\XJTU\XJTU.Service\bin\Debug\XJTU.Service.Contract.dll
+F:\gps\XJTUWeb\XJTU\XJTU.Service\bin\Debug\XJTU.DataAccess.Contract.pdb
+F:\gps\XJTUWeb\XJTU\XJTU.Service\bin\Debug\XJTU.Model.pdb
+F:\gps\XJTUWeb\XJTU\XJTU.Service\bin\Debug\XJTU.Service.Contract.pdb
+F:\gps\XJTUWeb\XJTU\XJTU.Service\obj\Debug\XJTU.Service.csprojResolveAssemblyReference.cache

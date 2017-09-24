@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Car" xmlns="http://ibatis.apache.org/mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  <cacheModels>
+    <cacheModel id="Car-cache" implementation="LRU">
+      <flushInterval hours="24"/>
+      <property name="size" value="1000" />
+    </cacheModel>
+  </cacheModels>
+  <alias>
+    <typeAlias alias="Car" type="XJTU.Model.Car,XJTU.Model"></typeAlias>
+  </alias>
+  <resultMaps>
+    <resultMap id="Car-Result" class="Car">
+      <result property="id" column="id"/>
+      <result property="time" column="time"/>
+      <result property="lng" column="lng"/>
+      <result property="lat" column="lat"/>
+      <result property="satellites" column="satellites"/>
+      <result property="sn" column="sn"/>
+      <result property="accx" column="accx"/>
+      <result property="accy" column="accy"/>
+      <result property="accz" column="accz"/>
+      <result property="magx" column="magx"/>
+      <result property="magy" column="magy"/>
+      <result property="magz" column="magz"/>
+      <result property="memsx" column="memsx"/>
+      <result property="memsy" column="memsy"/>
+      <result property="memsz" column="memsz"/>
+    </resultMap>
+  </resultMaps>
+  <statements>
+    <select id="GetCarRecordCount" parameterClass="int"  resultClass="int">
+      SELECT count(id) FROM baseinfo  where sn=#sn#
+    </select>
+
+    <select id="list" parameterClass="hashtable" resultClass="Car">
+      SELECT * FROM baseinfo A
+      <dynamic prepend="WHERE">
+        <isNotEmpty prepend="AND" property="sn">
+          A.sn=#sn#
+        </isNotEmpty>
+      </dynamic>
+      <dynamic prepend="AND">
+        <isNotNull property="startTime">
+          <isNotNull property="endTime">
+            UNIX_TIMESTAMP(A.time) BETWEEN UNIX_TIMESTAMP(#startTime#) AND UNIX_TIMESTAMP(#endTime#)
+          </isNotNull>
+        </isNotNull>
+      </dynamic>
+      ORDER BY A.id asc
+      <dynamic prepend="LIMIT">
+        <isNotNull property="startIndex">
+          <isNotNull property="pageSize">
+            #startIndex# , #pageSize#
+          </isNotNull>
+        </isNotNull>
+      </dynamic>
+    </select>
+  </statements>
+
+</sqlMap>

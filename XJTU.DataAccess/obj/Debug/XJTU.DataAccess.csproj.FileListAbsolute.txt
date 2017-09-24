@@ -1,0 +1,14 @@
+F:\gps\XJTUWeb\XJTU\XJTU.DataAccess\obj\Debug\XJTU.DataAccess.csprojResolveAssemblyReference.cache
+F:\gps\XJTUWeb\XJTU\XJTU.DataAccess\bin\Debug\XJTU.DataAccess.dll
+F:\gps\XJTUWeb\XJTU\XJTU.DataAccess\bin\Debug\XJTU.DataAccess.pdb
+F:\gps\XJTUWeb\XJTU\XJTU.DataAccess\bin\Debug\IBatisNet.Common.dll
+F:\gps\XJTUWeb\XJTU\XJTU.DataAccess\bin\Debug\IBatisNet.Common.Logging.Log4Net.dll
+F:\gps\XJTUWeb\XJTU\XJTU.DataAccess\bin\Debug\IBatisNet.DataAccess.dll
+F:\gps\XJTUWeb\XJTU\XJTU.DataAccess\bin\Debug\IBatisNet.DataMapper.dll
+F:\gps\XJTUWeb\XJTU\XJTU.DataAccess\bin\Debug\XJTU.DataAccess.Contract.dll
+F:\gps\XJTUWeb\XJTU\XJTU.DataAccess\bin\Debug\XJTU.Model.dll
+F:\gps\XJTUWeb\XJTU\XJTU.DataAccess\bin\Debug\log4net.dll
+F:\gps\XJTUWeb\XJTU\XJTU.DataAccess\bin\Debug\XJTU.DataAccess.Contract.pdb
+F:\gps\XJTUWeb\XJTU\XJTU.DataAccess\bin\Debug\XJTU.Model.pdb
+F:\gps\XJTUWeb\XJTU\XJTU.DataAccess\obj\Debug\XJTU.DataAccess.dll
+F:\gps\XJTUWeb\XJTU\XJTU.DataAccess\obj\Debug\XJTU.DataAccess.pdb

@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        body, html, #allmap {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        #l-map {
+            height: 100%;
+            width: 78%;
+            float: left;
+            border-right: 2px solid #bcbcbc;
+        }
+
+        #r-result {
+            height: 100%;
+            width: 20%;
+            float: left;
+        }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script>
+    <title>折线 </title>
+</head>
+<body>
+    <div id="allmap"></div>
+</body>
+</html>
+<script type="text/javascript">
+
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point();
+    map.centerAndZoom(point, 15);
+    map.enableScrollWheelZoom(true);
+    var Point1 = new BMap.Point(121.449600, 31.105988);
+    var Point2 = new BMap.Point(121.449600, 31.106060);
+    var Point3 = new BMap.Point(121.449600, 31.106136);
+    var Point4 = new BMap.Point(121.449600, 31.106213);
+    var Point5 = new BMap.Point(121.449600, 31.106293);
+    var Point6 = new BMap.Point(121.449600, 31.106367);
+    var Point7 = new BMap.Point(121.449600, 31.106443);
+    var Point8 = new BMap.Point(121.449600, 31.106520);
+    //map.addOverlay(marker1);
+    //map.addOverlay(marker2);
+    //map.addOverlay(marker3);
+    var arrs = [];
+    arrs.push(Point1);
+    arrs.push(Point2);
+    arrs.push(Point3);
+    arrs.push(Point4);
+    arrs.push(Point5);
+    arrs.push(Point6);
+    arrs.push(Point7);
+    arrs.push(Point8);
+    var polyline = new BMap.Polyline(arrs, { strokeColor: "blue", strokeWeight: 6, strokeOpacity: 0.5 });
+    map.addOverlay(polyline);
+
+    var view = map.getViewport(arrs);
+    map.centerAndZoom(view.center, view.zoom);
+</script>

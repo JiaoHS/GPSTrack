@@ -1,0 +1,4 @@
+F:\gps\XJTUWeb\XJTU\XJTU.Model\bin\Debug\XJTU.Model.dll
+F:\gps\XJTUWeb\XJTU\XJTU.Model\bin\Debug\XJTU.Model.pdb
+F:\gps\XJTUWeb\XJTU\XJTU.Model\obj\Debug\XJTU.Model.dll
+F:\gps\XJTUWeb\XJTU\XJTU.Model\obj\Debug\XJTU.Model.pdb
